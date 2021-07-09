@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Design of a Two Stage Reverted Speed Reducer</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0; font-family: "Roboto Mono"}
+
+h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3{
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+p{
+    text-align: left;
+    padding: 20px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: white; color: black;}
+
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+  <h2>Design of a Two Stage Reverted Speed Reducer</h2>
+  <h3>About:</h3>
+  <p>This was a project I worked on as a junior undergraduate Mechanical Engineering student at the University of Wisconsin – Madison. It was completed in collaboration with three classmates: Mohamed Safwat, Mohammed Al Amer, and Sultan Al Wahedi. Our task was to design a Two Stage Reverted Speed Reducer to be used in a Practical Moped. The automobile needed to have a motor power of 4 hp, a motor speed of 6,000 rpm, and had to be as cheap as possible with minimal weight. Figure 1 shows the schematic of the speed reducer which includes the input, counter, and output shafts. We broke up the project into 4 sections: Force Analysis, Static Stress Analysis, Gear Fatigue Analysis, and Shaft Fatigue Analysis. The project had a duration of roughly 3 months, from January 21st – April 22nd of 2021. </p>
+  <p>Attached is a copy for each of the sections mentioned above. </p>
+  <h3>Part A:</h3>
+  <p>This section includes a complete force analysis on all the components, including all three shafts, gears, pinions, and bearings. For every combination of components and planes, there is a free body diagram, a shear diagram, a bending moment diagram, and a torque diagram. The force analysis was completed using an equation solving program known as Engineering Equation Solver (EES) and the results are summarized in a table. The results indicate the torques and moments for each shaft at each gear location, the tangential and radial forces on each gear, and finally the reaction forces at each bearing.</p>
+  <p>Part A Report</p>
+    </p>
+  <h3>Part B:</h3>
+  <p>Part B includes a complete static strength for all three shafts to determine minimum shaft sizes and material. Instead of using the Maximum Shear Stress Theory, we used the Distortion Energy Theory (DET) as we wanted to optimize component cost and weight. DET is less conservative, however, given the market for mopeds, the reduction in cost and weight is worth it. This report also includes our reasoning for picking our shaft material to be Low-Carbon Steel 1018. We ran the analysis twice, once to find the minimum shaft diameters at each component location to achieve a safety factor of 1.5 and again to find the minimum shaft diameter such that the most vulnerable component has a safety factor of 1.5. In chapter 6.12, Juvinall suggests using a safety factor of 1.5-2 for conditions that experience relatively consistent loads without an emphasis on low weight priority [1]. Therefore, to minimize the weight and the amount of material used to lower the cost while also ensuring a reliable safety factor, we decided to go with the lower bound of 1.5.</p>
+  <p>Part B Report</p>
+  <p>[1] Juvinall, R. C., Marshek, K. M., Fundamentals of Machine Component Design 5th ed. (2011)</p>
+  <h3>Part C:</h3>
+  <p>Part B includes a complete static strength for all three shafts to determine minimum shaft sizes and material. Instead of using the Maximum Shear Stress Theory, we used the Distortion Energy Theory (DET) as we wanted to optimize component cost and weight. DET is less conservative, however, given the market for mopeds, the reduction in cost and weight is worth it. This report also includes our reasoning for picking our shaft material to be Low-Carbon Steel 1018. We ran the analysis twice, once to find the minimum shaft diameters at each component location to achieve a safety factor of 1.5 and again to find the minimum shaft diameter such that the most vulnerable component has a safety factor of 1.5. In chapter 6.12, Juvinall suggests using a safety factor of 1.5-2 for conditions that experience relatively consistent loads without an emphasis on low weight priority [1]. Therefore, to minimize the weight and the amount of material used to lower the cost while also ensuring a reliable safety factor, we decided to go with the lower bound of 1.5.</p>
+</div>
+
+</body>
+</html>

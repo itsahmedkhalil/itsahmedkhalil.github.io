@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <title>Quadrotor Trajectory Tracking Control Optimization</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto Mono"
+    }
+
+    h2 {
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    h3 {
+      padding: 20px;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    p {
+      text-align: left;
+      padding: 20px;
+    }
+
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    ul.topnav li {
+      float: left;
+    }
+
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.topnav li a:hover:not(.active) {
+      background-color: white;
+      color: black;
+    }
+
+
+    ul.topnav li.right {
+      float: right;
+    }
+
+    video {
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+      ul.topnav li.right,
+      ul.topnav li {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+  </ul>
+
+  <div style="padding:0 16px;">
+    <h2>Quadrotor Trajectory Tracking Control Optimization</h2>
+    <video width="320" height="240" controls>
+      <source src="func.mp4" type="video/mp4">
+      <source src="func.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    <h3>About:</h3>
+    <p>This was a project I worked on as an undergraduate research assistant at ARCs Lab (previously known as Xu
+      Research Group) at UW Madison’s Mechanical Engineering department. My task was to replicate and simulate the
+      quadrotor controller algorithms described in the research paper titled “Flatness-based Model Predictive Control
+      for Quadrotor Trajectory Tracking” in MATLAB. I completed the project on my own with some guidance from Dr.
+      Xiangru Xu and Victor Freire, a master’s student. The project had a duration of roughly 4 months, from January
+      21st – May 9th of 2021. </p>
+    <h3>Background:</h3>
+    <p>The proposed algorithm, FMPC, takes advantage of the quadrotor’s differential flatness property and couples
+      feedback model predictive control with feedforward linearization. This proposed approach has a computational
+      advantage as it only requires a convex quadratic problem to be solved, allowing the computations to be completed
+      on-board of the quadrotor. The proposed method also claims to have improved trajectory tracking compared to other
+      model predictive control approaches. I was tasked with replicating this method in this paper on MATLAB as the Xu
+      Research Group is currently developing a toolbox for quadrotor simulation.
+    <p>Please refer to the report in the PDF below for more detail.</p>
+    <div class = "pdf">
+      <embed src="Ahmed_Khalil_Independent_Study_Report.pdf" type="application/pdf" width="100%" height="600px"/>
+    </div>
+    <h3>Summary of Learnings:</h3>
+    <p>While taking part in this research experience, I was able to get insight into the growing field of MPC
+      controllers, a brief understanding of drone dynamics, and a lot of MATLAB experience. In retrospect, I wasted too
+      much time at the start of the semester trying to understand what is going on before getting started. In the
+      future, I will just get started and research things that I do not understand as I go. </p>
+  </div>
+</body>
+</html>
